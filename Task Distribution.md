@@ -12,7 +12,11 @@
 2- Transition Animation Part 3: {Sit -> Read}
 
 #Nada Hesham 
-1- 3D Models (Environment, Tree, Chair, Ice Cream Truck)
+1- 3D Models :
+    environment
+    tree
+    chair
+    ice cream truck
 2- Transition Animation Part 4: {Stand -> Jump}
 
 #Mohammad Ashraf Abdallah
