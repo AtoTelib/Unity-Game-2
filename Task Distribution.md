@@ -10,3 +10,7 @@
 #Abdelrahman Sabri
 1- 3D Models (Player, Character 1, Character 2, Bench, Light pole)
 2- Transition Animation Part 3: {Sit -> Read}
+
+#Nada Hesham 
+1- 3D Models (Environment, Tree, Chair, Ice Cream Truck)
+2- Transition Animation Part 4: {Stand -> Jump}
