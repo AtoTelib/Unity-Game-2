@@ -6,3 +6,7 @@
 1- Textures
 2- Transition animation part 2: {Walk -> Idle}
 3- Fountain particle system
+
+#Abdelrahman Sabri
+1- 3D Models (Player, Character 1, Character 2, Bench, Light pole)
+2- Transition Animation Part 3: {Sit -> Read}
