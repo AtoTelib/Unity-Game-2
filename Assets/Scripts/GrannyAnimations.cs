@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrannyAnimations : MonoBehaviour
 {
      public Animator grannyAnimator;
+     public Animator buttonAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +17,20 @@ public class GrannyAnimations : MonoBehaviour
     {
         if(DialougeManager.grannyInteract){
             grannyAnimator.SetBool("interact",true);
+            buttonAnimator.SetBool("interactButton",false);
         }else {
             grannyAnimator.SetBool("interact",false);
+        //    buttonAnimator.SetBool("interactButton",true);
         }
+
+      
         
+    }
+    private void OnTriggerEnter(Collider other) {
+        buttonAnimator.SetBool("interactButton",true);
+    }
+    private void OnTriggerExit(Collider other) {
+        buttonAnimator.SetBool("interactButton",false);
     }
    
 }

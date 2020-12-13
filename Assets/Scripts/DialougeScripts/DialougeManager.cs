@@ -39,7 +39,21 @@ private  Queue<string> sentences;
             return;
         }
         string sentence=sentences.Dequeue();
-        dialougeText.text=sentence;
+       // dialougeText.text=sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+
+
+    }
+
+    IEnumerator TypeSentence(string sentence){
+        dialougeText.text="";
+        foreach(char letter in sentence.ToCharArray()){
+            dialougeText.text += letter;
+            yield return null;
+            yield return null;
+            yield return null;
+        }
     }
     public void EndDialouge(){
         animator.SetBool("isOpen",false);
