@@ -2,104 +2,95 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialougeManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialougeText;
-    public Text dialougeAnswer1;
-    public Text dialougeAnswer2;
     public Animator animator;
-   
-    public static bool grannyInteract=false;
-private  static Queue<string> sentences;
-private static Queue<string> answers;
+
+    public static bool grannyInteract = false;
+
+    public GameObject Player;
+    private static Queue<string> sentences;
+
+
+
     void Start()
     {
-        sentences=new Queue<string>();  
-        answers =new Queue<string>(); 
+        sentences = new Queue<string>();
     }
-    public void StartDialouge(Dialouge dialouge){
+    public void StartDialouge(Dialouge dialouge)
+    {
+        Debug.Log("Step B");
+        animator.SetBool("isOpen", true);
+        grannyInteract = true;
+        //   
 
-        animator.SetBool("isOpen",true);
-        grannyInteract=true;
-       
-        nameText.text=dialouge.name;
+        nameText.text = dialouge.name;
 
         sentences.Clear();
 
-        foreach(string sentence in dialouge.sentences){
+        foreach (string sentence in dialouge.sentences)
+        {
+            Debug.Log(sentence);
             sentences.Enqueue(sentence);
-            
-            
-        }
-        answers.Clear();
-       foreach(string answer in dialouge.answers){
-            answers.Enqueue(answer);
-                
-        }
-       
-    //    Debug.Log(answers.Count);
 
+        }
+        Debug.Log("Sentences Before " + sentences.Count);
         DisplayNextSentence();
-       // DisplayAnswers();
 
     }
 
-    public void DisplayNextSentence(){
-        if(sentences.Count==0){
+    public void DisplayNextSentence()
+    {
+        Debug.Log("Step C");
+
+        if (sentences.Count == 0)
+        {
+
+
+            //        Debug.Log("ICCC");
             EndDialouge();
             return;
         }
-        Debug.Log(sentences.Count);
-         string sentence=sentences.Dequeue();
+        Debug.Log("Sentences What? ");
+        string sentence = sentences.Dequeue();
 
-         
 
-     
-    // dialougeText.text=sentence;
-    
+        if (sentences.Count == 1)
+        {
+            Debug.Log("INNNN");
+            SceneManager.LoadScene("Quiz", LoadSceneMode.Additive);
+
+        }
+        //      dialougeText.text=sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        Debug.Log("Sentences After HERE " + sentences.Count);
 
 
     }
-   
 
-    IEnumerator TypeSentence(string sentence){
-        dialougeText.text="";
-        foreach(char letter in sentence.ToCharArray()){
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialougeText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
             dialougeText.text += letter;
             yield return null;
 
-         
         }
-         DisplayAnswers();
-     
-       
     }
-
-     void DisplayAnswers(){
-        
-        Debug.Log(answers.Count);
-        if(answers.Count==0){
-             return;
-       }
-
-       
-        string answer1=answers.Dequeue();
-        string answer2=answers.Dequeue();
-        dialougeAnswer1.text=answer1;
-        dialougeAnswer2.text=answer2;
-         
-    }
-    public void EndDialouge(){
-        animator.SetBool("isOpen",false);
-    //    grannyAnimator.SetBool("interact",false);
-        grannyInteract=false;
+    public void EndDialouge()
+    {
+        animator.SetBool("isOpen", false);
+        //    grannyAnimator.SetBool("interact",false);
+        grannyInteract = false;
 
 
     }
 
-  
+
 }

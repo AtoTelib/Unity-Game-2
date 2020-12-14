@@ -6,6 +6,18 @@ public class GrannyAnimations : MonoBehaviour
 {
      public Animator grannyAnimator;
      public Animator buttonAnimator;
+
+    public static int character;
+    
+    public int getCharacter()
+    {
+        return character;
+    }
+
+    public void setCharacter(int a)
+    {
+        character = a;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +41,7 @@ public class GrannyAnimations : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         buttonAnimator.SetBool("interactButton",true);
         AudioManager.popButton=true;
+        setCharacter(0);
     }
     private void OnTriggerExit(Collider other) {
         buttonAnimator.SetBool("interactButton",false);

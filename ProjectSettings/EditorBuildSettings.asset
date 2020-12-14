@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: 1790cc9ea7b981f4fafc115856deed26
+  - enabled: 1
+    path: Assets/Scenes/Quiz.unity
+    guid: ab36facab6386714dbaf9765c20f060a
   m_configObjects: {}

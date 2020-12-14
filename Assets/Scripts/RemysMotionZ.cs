@@ -5,9 +5,21 @@ using UnityEngine;
 public class RemysMotionZ : MonoBehaviour
 {
     bool happy;
-    Animator anim;
+    Animator anim; 
+    public static int character;
+    public Animator buttonAnimator;
+    public GameObject referenceConv;
 
-    
+    public int getCharacter()
+    {
+        return character;
+    }
+
+    public void setCharacter(int a)
+    {
+        character = a;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +32,19 @@ public class RemysMotionZ : MonoBehaviour
     {
 
         if(happy){
-            anim.SetBool("happy",true);
+           anim.SetBool("happy",true);
         }
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        buttonAnimator.SetBool("interactButton", true);
+        referenceConv.GetComponent<GrannyAnimations>().setCharacter(5);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        buttonAnimator.SetBool("interactButton", false);
     }
 }
