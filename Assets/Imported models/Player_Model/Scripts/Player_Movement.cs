@@ -3,58 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
-{
-    public float speed = 1;
-    public float rotation = 1;
-    private bool moveup;
-    private bool movedown;
-    private Vector3 moved;
+{  CharacterController characterController;
 
-    bool animation_started = false;
-    bool animation_finished = false;
-    Animator anim;
-    private Rigidbody controller;
-    
+    public float speed = 6.0f;
+    public float jumpSpeed = 8.0f;
+    public float gravity = 20.0f;
+    private Animator anim;
 
-    // Start is called before the first frame update
+    private Vector3 moveDirection = Vector3.zero;
+
     void Start()
     {
-        anim = GetComponent<Animator>();
-        controller = gameObject.GetComponent<Rigidbody>();
-        moved = new Vector3(0, 0, 0);
+        characterController = GetComponent<CharacterController>();
+                    anim = GetComponent<Animator>();
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Vector3 move = new Vector3(0, 0, 1);
-
-        // float x = Input.GetAxis("Vertical")* speed *Time.deltaTime;
-        // transform.Translate(0,0,x);
-        float y = Input.GetAxis("Horizontal") * rotation * Time.deltaTime;
-        transform.Rotate(0, y, 0);
-    //    Debug.Log(Input.GetAxis("Vertical"));
-        if (Input.GetAxis("Vertical") > 0)
+        
+        if (characterController.isGrounded)
         {
-   //         Debug.Log(Input.GetAxis("Vertical"));
+        float y = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        transform.Rotate(0, y, 0);
+        if (Input.GetAxis("Vertical") != 0)
+        {
+            moveDirection = transform.forward* Input.GetAxis("Vertical");
+            moveDirection *= speed;
             anim.Play("James_Walking");
-            Vector3 moving = transform.forward * Input.GetAxis("Vertical") * speed;
-            controller.AddForce(moving);
-            // moved+=moving;
-            // controller.velocity=transform.forward *speed*Input.GetAxis("Vertical");
-
         }
         if (Input.GetAxis("Vertical") == 0)
         {
             anim.Play("James_Idle1");
-    
-            // controller.velocity=new Vector3(controller.velocity.x,controller.velocity.y, 0);
-            // controller.AddForce(-transform.forward* speed);
-            controller.ResetCenterOfMass();
-            // moved =new Vector3(0, 0, 0);
 
         }
-    }
+            // We are grounded, so recalculate
+            // move direction directly from axes
 
- 
+            if (Input.GetButton("Jump"))
+            {
+                moveDirection.y = jumpSpeed;
+            }
+        }
+        // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
+        // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
+        // as an acceleration (ms^-2)
+        moveDirection.y -= gravity * Time.deltaTime;
+
+        // Move the controller
+        characterController.Move(moveDirection * Time.deltaTime);
+    }
 }
