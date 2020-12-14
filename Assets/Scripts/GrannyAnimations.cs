@@ -28,9 +28,12 @@ public class GrannyAnimations : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) {
         buttonAnimator.SetBool("interactButton",true);
+        AudioManager.popButton=true;
     }
     private void OnTriggerExit(Collider other) {
         buttonAnimator.SetBool("interactButton",false);
+        AudioManager.popButton=false;
+
     }
    
 }
