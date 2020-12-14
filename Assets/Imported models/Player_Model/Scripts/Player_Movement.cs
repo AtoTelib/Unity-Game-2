@@ -31,10 +31,15 @@ public class Player_Movement : MonoBehaviour
             moveDirection = transform.forward* Input.GetAxis("Vertical");
             moveDirection *= speed;
             anim.Play("James_Walking");
+            AudioManager.footsteps=false;
+
+
         }
         if (Input.GetAxis("Vertical") == 0)
         {
             anim.Play("James_Idle1");
+            AudioManager.footsteps=true;
+
 
         }
             // We are grounded, so recalculate

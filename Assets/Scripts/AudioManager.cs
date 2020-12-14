@@ -56,8 +56,9 @@ public class AudioManager : MonoBehaviour
         popButton=false;
     }
     void footstepAudio(){
-     //   Footsteps.Play();
-        footsteps=false;
+        Footsteps.Play();
+   //     Debug.Log("step");
+     //   footsteps=false;
     }
     
 }

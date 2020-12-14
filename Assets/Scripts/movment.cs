@@ -20,7 +20,6 @@ public class movment: MonoBehaviour {
     // Update is called once per frame
     void Update() {
         // Vector3 move = new Vector3(0, 0, 1);
-
         // float x = Input.GetAxis("Vertical")* speed *Time.deltaTime;
         // transform.Translate(0,0,x);
         float y = Input.GetAxis("Horizontal") * rotation * Time.deltaTime;

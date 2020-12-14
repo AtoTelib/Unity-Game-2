@@ -48,7 +48,7 @@ void Increment(){
             anim.SetBool("walking",true);
             anim.SetBool("sit",false);
         }
-        Debug.Log(i);
+//        Debug.Log(i);
          if(agent.remainingDistance<=2  && !walking && l&& !reading){
             GoToNext();
             Increment();

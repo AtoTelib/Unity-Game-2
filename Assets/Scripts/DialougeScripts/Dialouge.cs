@@ -8,4 +8,6 @@ public class Dialouge
     public string name;
     [TextArea(3,10)]
     public string[] sentences;
+    [TextArea(3,10)]
+    public string[] answers;
 }
