@@ -36,6 +36,8 @@ public class MoveCharacter : MonoBehaviour
         
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.WalkingZ"))
  {
+//     Debug.Log("walking");
+     // AudioManager.footsteps=true;
 
      if(index<2){
     // Avoid any reload.
@@ -68,12 +70,15 @@ public class MoveCharacter : MonoBehaviour
              //enter = false;
              transform.Translate(7*Vector3.forward * Time.deltaTime);
              //anim.SetBool("ShouldTurn", false);
+            
          }
          else{
              //shouldTurn = false;
              //enter = false;
              transform.Translate(7*Vector3.forward * Time.deltaTime*-1);
              //anim.SetBool("ShouldTurn", false);
+           //   AudioManager.footsteps=true;
+
 
          }
          
