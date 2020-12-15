@@ -33,8 +33,7 @@ public class QuizChoices : MonoBehaviour
     }
     public void Update()
     {
-        Debug.Log("Char number " + c);
-        //   Debug.Log("Character " + c);
+    
         if (c == 0)
         {
             A1.GetComponentInChildren<Text>().text = "Giving or buying him or her items needed to carry out rituals, such as soap for hand washing.";
