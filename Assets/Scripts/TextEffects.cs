@@ -16,10 +16,10 @@ public class TextEffects : MonoBehaviour
     {
 
         text = GetComponent<Text>();
-        if(!flashing)
+     /*   if(!flashing)
             alpha =0.0f;
         else
-            alpha=1.0f;
+            alpha=1.0f;*/
         brighten= false;
 
         

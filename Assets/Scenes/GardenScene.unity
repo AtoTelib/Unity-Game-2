@@ -622,6 +622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAnimator: {fileID: 839409308}
   referenceConv: {fileID: 863875068}
+  conv: {fileID: 839409302}
 --- !u!95 &89068699
 Animator:
   serializedVersion: 3
@@ -6231,11 +6232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aae921ff04bd4888b433a5a672934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.869427
+      value: 59.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aae921ff04bd4888b433a5a672934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.15
+      value: -25.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aae921ff04bd4888b433a5a672934, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6601,6 +6602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAnimator: {fileID: 839409308}
   referenceConv: {fileID: 863875068}
+  conv: {fileID: 839409302}
 --- !u!1 &236035041
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,22 +6963,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &264477437
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264477435}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &264477438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -7000,22 +6986,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &270760842
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270760840}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &270760843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -7681,8 +7651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75.206, y: -25.3}
-  m_SizeDelta: {x: 440.35327, y: 86.664185}
+  m_AnchoredPosition: {x: 16.9, y: -15.6}
+  m_SizeDelta: {x: 461.1, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360120776
 MonoBehaviour:
@@ -8445,6 +8415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grannyAnimator: {fileID: 863875069}
   buttonAnimator: {fileID: 839409308}
+  conv: {fileID: 0}
 --- !u!114 &368614794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8488,6 +8459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAnimator: {fileID: 839409308}
   referenceConv: {fileID: 863875068}
+  conv: {fileID: 839409302}
 --- !u!1001 &369039437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8601,6 +8573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAnimator: {fileID: 839409308}
   referenceConv: {fileID: 863875068}
+  conv: {fileID: 839409302}
 --- !u!1001 &398643553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9667,22 +9640,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &547559132
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547559130}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &547559133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -10966,22 +10923,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &756809588
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756809586}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &756809589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -11071,22 +11012,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &778088173
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778088171}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &778088174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -11490,19 +11415,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681c26f9fc38e7446930bfde7fcc8a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialouge:
+  dialouge1:
     name: Granny
     sentences:
-    - Hello, I am Granny and you are interupting my yoga time!
-    - Do you want to talk?
-    - GET OUT OF HERE!!
-    answers:
-    - hi
-    - bye
-    - hello
-    - good morning
-    - bad
-    - good
+    - This is your friend Granny which was diagnosed with OCD. Obsessive-compulsive
+      disorder (OCD) is a mental illness that causes repeated unwanted thoughts or
+      sensations (obsessions) and/or the urge to do something over and over again
+      (compulsions).
+    - 'Tips to deal with OCD: Medication-Psychoeducation-find support group'
+    - Bye
+    answers: []
+  dialouge2:
+    name: Mark
+    sentences:
+    - This is your boss Mark which was diagnosed with depression. Depression serious
+      illness that affects how you feel,think and act. Fortunately, it is treatable.
+      Depression causes feelings of sadness and/or a loss of interest in activities,
+      leads to a variety of emotional and physical problems.
+    - 'Tips to deal with depression: 1-Eat Healthy. 2-Exercise. 3-Sleep. 4-Stay Connected.
+      5-Take a tech break. 6-Ask for help'
+    - Call me if you need help.
+    answers: []
+  dialouge3:
+    name: Karla
+    sentences:
+    - This is your colleague Karla which was diagnosed with anxiety. Anxiety is a
+      normal emotion. However, when a person regularly feels disproportionate levels
+      of anxiety, it might become a medical disorder. Anxiety disorders form a category
+      of mental health diagnoses that lead to worry.
+    - 'TIPS FOR ANXIETY: 1-Start caring for yourself. 2-Write down your thoughts.
+      3-Try supplements or change your diet.'
+    - Bye
+    answers: []
+  dialouge4:
+    name: Sarah
+    sentences:
+    - This your friend Sarah which was diagnosed with bipolar. Bibolar a mental illness
+      marked by extreme shifts in mood. Symptoms can include an extremely elevated
+      mood called mania. They can also include episodes of depression. Bipolar disorder
+      is also known as bipolar disease or manic depression.
+    - 'Tips to deal with bibolar: 1-Talk to one person about your feelings. 2-Ask
+      a loved one to check in with you regularly. 3-Meet new people by taking a class
+      or joining a club.'
+    - Bye
+    answers: []
+  dialouge5:
+    name: Ramy
+    sentences:
+    - This is your gym coach Ramy which was diagnosed with ADHD. Attention-deficit/hyperactivity
+      disorder (ADHD) is a disorder marked by an ongoing pattern of inattention and/or
+      hyperactivity-impulsivity that interferes with functioning or development.
+    - 'Tips to deal with ADHD: 1-Learn: Empower yourself with knowledge. 2-Evaluate:
+      Discover your own strengths. 3-Validate: Embrace the courage in your hear.
+      4-Express: Dare to face your fears. 5-Reframe: Change your attitude, and your
+      life will change. 6-Act: Start small BUT start now.'
+    - See you at the gym.
+    answers: []
+  dialouge6:
+    name: Remy
+    sentences:
+    - Remy has eating disorder. Eating disorders are a range of psychological conditions
+      that cause unhealthy eating habits to develop. They might start with an obsession
+      with food, body weight, or body shape. In severe cases, eating disorders can
+      cause serious health consequences.
+    - 'Tips to deal with eating disorder: 1-Listen to your feelings. 2-Listen to
+      your body. 3-Accept yourself. 4-Love yourself.'
+    - If you want to talk, I'm always here.
+    answers: []
 --- !u!114 &839409305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11913,6 +11892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grannyAnimator: {fileID: 863875069}
   buttonAnimator: {fileID: 839409308}
+  conv: {fileID: 839409302}
 --- !u!65 &863875072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11944,22 +11924,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &875352845
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875352843}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &875352846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -12409,22 +12373,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &924096272
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924096270}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &924096273 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -17693,7 +17641,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 22
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -20224,7 +20172,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4, y: -36}
-  m_SizeDelta: {x: 667.93665, y: 172.01332}
+  m_SizeDelta: {x: 689, y: 237.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284701833
 MonoBehaviour:
@@ -20498,22 +20446,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1315103150
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315103148}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &1315103151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -20608,22 +20540,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1332486544
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332486541}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1332626939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20882,22 +20798,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1367118089
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367118087}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &1367118090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}
@@ -21896,11 +21796,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aae921ff04bd4888b433a5a672934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.963768
+      value: 59.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aae921ff04bd4888b433a5a672934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.14
+      value: -25.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aae921ff04bd4888b433a5a672934, type: 3}
       propertyPath: m_LocalRotation.x
@@ -22099,6 +21999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAnimator: {fileID: 839409308}
   referenceConv: {fileID: 863875068}
+  conv: {fileID: 839409302}
 --- !u!65 &1639742282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25207,22 +25108,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2129834760
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129834758}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &2129834761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d195f12764bca9e4f9506db6fb156a21, type: 3}

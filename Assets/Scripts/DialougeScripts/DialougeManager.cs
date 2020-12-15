@@ -15,7 +15,7 @@ public class DialougeManager : MonoBehaviour
     public GameObject Player;
     private static Queue<string> sentences;
 
-
+    
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class DialougeManager : MonoBehaviour
     }
     public void StartDialouge(Dialouge dialouge)
     {
-        Debug.Log("Step B");
+  //      Debug.Log("Step B");
         animator.SetBool("isOpen", true);
         grannyInteract = true;
         //   
@@ -59,9 +59,9 @@ public class DialougeManager : MonoBehaviour
         string sentence = sentences.Dequeue();
 
 
-        if (sentences.Count == 1)
+        if (sentences.Count ==1)
         {
-            Debug.Log("INNNN");
+    //        Debug.Log("INNNN");
             SceneManager.LoadScene("Quiz", LoadSceneMode.Additive);
 
         }

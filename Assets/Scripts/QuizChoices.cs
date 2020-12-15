@@ -16,6 +16,11 @@ public class QuizChoices : MonoBehaviour
 
     public GameObject character;
 
+    public GameObject Description;
+
+    public GameObject CorrectAudio;
+    public GameObject WrongAudio;
+
 
     //   int c = GrannyAnimations.getCharacter();
 
@@ -36,11 +41,12 @@ public class QuizChoices : MonoBehaviour
     
         if (c == 0)
         {
-            A1.GetComponentInChildren<Text>().text = "Giving or buying him or her items needed to carry out rituals, such as soap for hand washing.";
+            Description.GetComponent<Text>().text = "Granny has OCD and feels that life is getting harder. What would you like to respond with?";
+            A1.GetComponentInChildren<Text>().text = "Giving him items needed to carry out rituals, such as soap for hand washing.";
             A2.GetComponentInChildren<Text>().text = "Stop thinking about it!";
             A3.GetComponentInChildren<Text>().text = "You have an amazing life! You should not obsess over insignificant things.";
             A4.GetComponentInChildren<Text>().text = "I wish I had OCD";
-            A5.GetComponentInChildren<Text>().text = "Getting involved in rituals by checking door locks, helping decontaminate clothing, food or even entire rooms with him. ";
+            A5.GetComponentInChildren<Text>().text = "Getting involved in rituals by checking door locks for example.";
             Answer1.GetComponentInChildren<Text>().text = "Right!";
             Answer2.GetComponentInChildren<Text>().text = "Wrong. If people with OCD could stop their unwanted thoughts, they would do that right away, because believe me: obsessing over irrational things and wasting your time on compulsions is not fun. Let’s not even mention the severe anxiety. However, the problem is that the harder you try to fight your disturbing thoughts, the more likely you will get them ";
             Answer3.GetComponentInChildren<Text>().text = "Wrong. Doubt is a terrible feeling but it is not the only one that people with OCD have to cope with. Guilt can turn your life into a nightmare too.";
@@ -48,10 +54,11 @@ public class QuizChoices : MonoBehaviour
             Answer5.GetComponentInChildren<Text>().text = "Right!";
         }if (c == 1)
         {
+            Description.GetComponent<Text>().text = "Mark has depression and is trying to survive. What would you like to respond with?";
             A1.GetComponentInChildren<Text>().text = "Cheer up";
             A2.GetComponentInChildren<Text>().text = "It could be worse.";
             A3.GetComponentInChildren<Text>().text = "Ask How You Can Help.";
-            A4.GetComponentInChildren<Text>().text = "BECOME A PSYCHOLOGIST to him/her";
+            A4.GetComponentInChildren<Text>().text = "Become a psychologist to him/her";
             A5.GetComponentInChildren<Text>().text = "Urge Them to Talk With a Doctor.";
             Answer1.GetComponentInChildren<Text>().text = "Wrong. cheer up or smile may feel friendly and supportive to you, but they oversimplify the feelings of sadness associated with depression. Just as someone who is depressed can't force their brain to make more serotonin, they also can't just decide to be happy. While there are certainly benefits to practicing positive thinking,2 it's not enough to cure someone of depression. YOU CAN Better Remind Them It's OK to Feel This Way";
             Answer2.GetComponentInChildren<Text>().text = "Wrong. People with depression also lack the internal resources needed to cope with stress in an effective and healthy way.4 To you, an event or situation that constitutes a minor annoyance or inconvenience may feel like an insurmountable obstacle to your loved one with depression. YOU CAN Better Tell Them You Care. These two simple words—“I care”—can mean so much to a person who may be feeling like the entire world is against them.";
@@ -60,6 +67,7 @@ public class QuizChoices : MonoBehaviour
             Answer5.GetComponentInChildren<Text>().text = "Right! If your friend has not yet seen a doctor, encourage them to seek help and reassure them that there is nothing wrong with asking for assistance. Depression is a real—and treatable—illness. If your friend is already seeing a doctor, offer to help with picking up medications and being on time for appointments. ";
         }if (c == 2)
         {
+            Description.GetComponent<Text>().text = "Karla has anxiety and is losing her temper. What would you like to respond with?";
             A1.GetComponentInChildren<Text>().text = "I know what you mean. I had a panic attack.";
             A2.GetComponentInChildren<Text>().text = "Let’s  go for a walk.";
             A3.GetComponentInChildren<Text>().text = "Why aren’t you seeing a therapist/on medication?";
@@ -69,13 +77,14 @@ public class QuizChoices : MonoBehaviour
             Answer2.GetComponentInChildren<Text>().text = "Right!";
             Answer3.GetComponentInChildren<Text>().text = "Wrong. There’s nothing wrong with showing concern for a friend, but be careful it doesn’t come across as accusatory. Suggesting your friend should be doing something can create a sense of shame if they aren’t, or make them feel like they’re being judged. If they do need to see a counselor or take medication, those are decisions they need to make on their own and at their own pace. ";
             Answer4.GetComponentInChildren<Text>().text = "Wrong. Meditation and yoga and deep breathing and all of the other anti-anxiety trends that have taken pop culture by storm might be helpful for some people, maybe even your ultra-anxious friend. But they might not. Extreme anxiety can feel consuming, which means that small things like taking a few deep breaths might not be enough to counter panic in the moment. Instead say: “What can I do to help you?” ";
-            Answer5.GetComponentInChildren<Text>().text = "Telling someone they should relax will definitely not help them overcome their anxiety. I wish relaxation could solve all the problems – but it does not. ";
+            Answer5.GetComponentInChildren<Text>().text = "Wrong. Telling someone they should relax will definitely not help them overcome their anxiety. I wish relaxation could solve all the problems – but it does not. ";
         }if (c == 3)
         {
+            Description.GetComponent<Text>().text = "Sarah is bipolar and is feeling down. What would you like to respond with?";
             A1.GetComponentInChildren<Text>().text = "Everybody Has Mood Swings Sometimes.";
             A2.GetComponentInChildren<Text>().text = "Everyone Is a Little Bipolar Sometimes.";
             A3.GetComponentInChildren<Text>().text = "You're Acting Like a Maniac.";
-            A4.GetComponentInChildren<Text>().text = "Your illness doesn't define who you are. You are still you, with hopes and dreams you can attain.";
+            A4.GetComponentInChildren<Text>().text = "Your illness doesn't define who you are.";
             A5.GetComponentInChildren<Text>().text = "I might not know how you feel, but I'm here to support you.";
             Answer1.GetComponentInChildren<Text>().text = "Wrong. Only people with bipolar disorder, cyclothymia, schizoaffective disorder, and related severe mental illnesses have repeated and severe mood swings between mania or hypomania and depression. ";
             Answer2.GetComponentInChildren<Text>().text = "Wrong. This similar phrase is insensitive for the same reasons. Having mood swings is not the same as having a diagnosable disorder.";
@@ -85,6 +94,7 @@ public class QuizChoices : MonoBehaviour
         }
         if (c == 4)
         {
+            Description.GetComponent<Text>().text = "Ramy has ADHD and can't concentrate. What would you like to respond with?";
             A1.GetComponentInChildren<Text>().text = "Everyone gets distracted sometimes";
             A2.GetComponentInChildren<Text>().text = "You just need to be a better listener";
             A3.GetComponentInChildren<Text>().text = "Remind Them They Are Loved ";
@@ -94,14 +104,15 @@ public class QuizChoices : MonoBehaviour
             Answer2.GetComponentInChildren<Text>().text = "WRONG. 'I'm so tired of always hearing 'you should listen better... if you were listening you would know... you obviously don't care or you would have listened.' I'm aware, but the constant reminders are like being slapped over and over again.' Abraham Knoff, Facebook";
             Answer3.GetComponentInChildren<Text>().text = "RIGHT. GOOD CHOICE";
             Answer4.GetComponentInChildren<Text>().text = "Right. make a safe space for them without any judgements.";
-            Answer5.GetComponentInChildren<Text>().text = "Don't say, 'I know how you feel,' (unless you also have ADHD). It minimizes what they're going through. ";
+            Answer5.GetComponentInChildren<Text>().text = "Wrong. Don't say, 'I know how you feel,' (unless you also have ADHD). It minimizes what they're going through. ";
         }
         if (c == 5)
         {
+            Description.GetComponent<Text>().text = "Remy has eating disorder and is looking down. What would you like to respond with?";
             A1.GetComponentInChildren<Text>().text = "I like your hair/bag/shoes/etc.";
             A2.GetComponentInChildren<Text>().text = "YOU AREN’T FAT! YOU LOOK SO HEALTHY!  ";
-            A3.GetComponentInChildren<Text>().text = "YOU ARE SO SKINNY! WHAT IS YOUR SECRET? I WISH I HAD YOUR WILLPOWER! ";
-            A4.GetComponentInChildren<Text>().text = "ISN’T THAT TOO MUCH FOOD? DO YOU KNOW HOW MANY CALORIES ARE IN THAT? ";
+            A3.GetComponentInChildren<Text>().text = "You are so skinny! What is your secret? I wish I had your willpower.";
+            A4.GetComponentInChildren<Text>().text = "Isn't that too much food?";
             A5.GetComponentInChildren<Text>().text = "•	I love you no matter what";
             Answer1.GetComponentInChildren<Text>().text = "Right.Everyone likes to get a compliment every now and then, but avoid saying 'you look healthy / good' because this could be heard as 'you look bigger' in the ears of someone in the early stages of recovery. However, giving a compliment about hair, shoes or maybe even their make-up can boost confidence and make the other feel better about themselves ";
             Answer2.GetComponentInChildren<Text>().text = "Wrong. •	To the ears of someone with an ED, this does not translate to the well-meaning comment it was likely intended. Healthy to someone with an eating disorder or a distorted body image does not have a positive connotation. The best thing you can do is to not comment on body size at all. ";
@@ -115,7 +126,6 @@ public class QuizChoices : MonoBehaviour
         if (A1)
         {
             A1.SetActive(false);
-
         }
         if (A2)
         {
@@ -140,6 +150,30 @@ public class QuizChoices : MonoBehaviour
         }
         Destroy(A1);
         Back.SetActive(true);
+        if (c == 0)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 1)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 2)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 3)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 4)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 5)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
 
         Answer1.SetActive(true); Answer2.SetActive(false); Answer3.SetActive(false); Answer4.SetActive(false); Answer5.SetActive(false);
     }
@@ -174,6 +208,30 @@ public class QuizChoices : MonoBehaviour
 
         Destroy(A2);
         Back.SetActive(true);
+        if (c == 0)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 1)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 2)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 3)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 4)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 5)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
         Answer1.SetActive(false); Answer2.SetActive(true); Answer3.SetActive(false); Answer4.SetActive(false); Answer5.SetActive(false);
     }
     public void Choice3()
@@ -206,6 +264,30 @@ public class QuizChoices : MonoBehaviour
         }
         Destroy(A3);
         Back.SetActive(true);
+        if (c == 0)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 1)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 2)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 3)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 4)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 5)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
         Answer1.SetActive(false); Answer2.SetActive(false); Answer3.SetActive(true); Answer4.SetActive(false); Answer5.SetActive(false);
     }
     public void Choice4()
@@ -238,6 +320,30 @@ public class QuizChoices : MonoBehaviour
         }
         Destroy(A4);
         Back.SetActive(true);
+        if (c == 0)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 1)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 2)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 3)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 4)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 5)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
         Answer1.SetActive(false); Answer2.SetActive(false); Answer3.SetActive(false); Answer4.SetActive(true); Answer5.SetActive(false);
     }
 
@@ -272,6 +378,30 @@ public class QuizChoices : MonoBehaviour
         }
         Destroy(A5);
         Back.SetActive(true);
+        if (c == 0)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 1)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 2)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 3)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 4)
+        {
+            WrongAudio.GetComponent<AudioSource>().Play();
+        }
+        if (c == 5)
+        {
+            CorrectAudio.GetComponent<AudioSource>().Play();
+        }
         Answer1.SetActive(false); Answer2.SetActive(false); Answer3.SetActive(false); Answer4.SetActive(false); Answer5.SetActive(true);
     }
 

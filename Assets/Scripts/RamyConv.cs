@@ -9,6 +9,8 @@ public class RamyConv : MonoBehaviour
     public static int character;
     public Animator buttonAnimator;
     public GameObject referenceConv;
+
+    public GameObject conv;
     public int getCharacter()
     {
         return character;
@@ -39,6 +41,7 @@ public class RamyConv : MonoBehaviour
         
         buttonAnimator.SetBool("interactButton", true);
         referenceConv.GetComponent<GrannyAnimations>().setCharacter(4);
+        conv.GetComponent<DialougeTrigger>().setCharacter(4);
     }
     private void OnTriggerExit(Collider other)
     {

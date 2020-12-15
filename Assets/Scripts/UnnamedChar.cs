@@ -9,6 +9,7 @@ public class UnnamedChar : MonoBehaviour
     public static int character;
     public Animator buttonAnimator;
     public GameObject referenceConv;
+    public GameObject conv;
     public int getCharacter()
     {
         return character;
@@ -42,6 +43,7 @@ public class UnnamedChar : MonoBehaviour
         
         buttonAnimator.SetBool("interactButton", true);
         referenceConv.GetComponent<GrannyAnimations>().setCharacter(3);
+        conv.GetComponent<DialougeTrigger>().setCharacter(3);
     }
     private void OnTriggerExit(Collider other)
     {

@@ -9,6 +9,7 @@ public class KarlaConv : MonoBehaviour
     public static int character;
     public Animator buttonAnimator;
     public GameObject referenceConv;
+    public GameObject conv;
     public int getCharacter()
     {
         return character;
@@ -42,6 +43,7 @@ public class KarlaConv : MonoBehaviour
         
         buttonAnimator.SetBool("interactButton", true);
         referenceConv.GetComponent<GrannyAnimations>().setCharacter(2);
+        conv.GetComponent<DialougeTrigger>().setCharacter(2);
     }
     private void OnTriggerExit(Collider other)
     {

@@ -10,6 +10,8 @@ public class RemysMotionZ : MonoBehaviour
     public Animator buttonAnimator;
     public GameObject referenceConv;
 
+    public GameObject conv;
+
     public int getCharacter()
     {
         return character;
@@ -42,6 +44,7 @@ public class RemysMotionZ : MonoBehaviour
         
         buttonAnimator.SetBool("interactButton", true);
         referenceConv.GetComponent<GrannyAnimations>().setCharacter(5);
+        conv.GetComponent<DialougeTrigger>().setCharacter(5);
     }
     private void OnTriggerExit(Collider other)
     {

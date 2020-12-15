@@ -7,6 +7,8 @@ public class GrannyAnimations : MonoBehaviour
      public Animator grannyAnimator;
      public Animator buttonAnimator;
 
+    public GameObject conv;
+
     public static int character;
     
     public int getCharacter()
@@ -42,6 +44,7 @@ public class GrannyAnimations : MonoBehaviour
         buttonAnimator.SetBool("interactButton",true);
         AudioManager.popButton=true;
         setCharacter(0);
+        conv.GetComponent<DialougeTrigger>().setCharacter(0);
     }
     private void OnTriggerExit(Collider other) {
         buttonAnimator.SetBool("interactButton",false);
